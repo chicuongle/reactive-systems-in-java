@@ -16,8 +16,8 @@
 		"vscjava.vscode-gradle",
         "naumovs.color-highlight"
 	]
-    // ,"mounts": [
-    //     "source=${localEnv:HOME}${localEnv:USERPROFILE}/work/workspace,target=/workspaces,type=bind,consistency=cached",
-    //     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/cle/.ssh,type=bind,consistency=cached"
-    // ]
+    ,"mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.m2,target=~/.m2,type=bind,consistency=cached",
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gradle,target=~/.gradle,type=bind,consistency=cached"
+    ]
 }
