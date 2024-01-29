@@ -17,7 +17,7 @@
         "naumovs.color-highlight"
 	]
     ,"mounts": [
-        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.m2,target=~/.m2,type=bind,consistency=cached",
-        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gradle,target=~/.gradle,type=bind,consistency=cached"
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.m2,target=${containerEnv:HOME}${containerEnv:USERPROFILE}/.m2,type=bind,consistency=cached",
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gradle,target=${containerEnv:HOME}${containerEnv:USERPROFILE}/.gradle,type=bind,consistency=cached"
     ]
 }
