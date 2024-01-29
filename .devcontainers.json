@@ -1,0 +1,23 @@
+{
+    "hostRequirements": {
+        "cpus": 4,
+        "memory": "8gb",
+        "storage": "32gb"
+    },
+    "image": "echipdockerhub/baseworkspace:spa-1.1.1",
+    "name": "spa",
+    "appPort": [
+        "8000:8000"
+    ]
+    ,
+    "extensions": [
+		"vscjava.vscode-java-pack",
+		"Angular.ng-template",
+		"vscjava.vscode-gradle",
+        "naumovs.color-highlight"
+	]
+    // ,"mounts": [
+    //     "source=${localEnv:HOME}${localEnv:USERPROFILE}/work/workspace,target=/workspaces,type=bind,consistency=cached",
+    //     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/cle/.ssh,type=bind,consistency=cached"
+    // ]
+}
